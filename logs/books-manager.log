@@ -1,0 +1,28 @@
+2025-09-07 10:11:06 [main] INFO  org.dti.Main - Iniciando aplicação Books Manager
+2025-09-07 10:11:06 [main] INFO  org.dti.Main - Criando diretório de dados se não existir
+2025-09-07 10:11:06 [main] INFO  org.dti.Main - Inicializando conexão com o banco de dados: data/books.db
+2025-09-07 10:11:06 [main] INFO  org.dti.infra.Database - Database inicializado com URL: jdbc:sqlite:data/books.db
+2025-09-07 10:11:06 [main] INFO  org.dti.infra.Database - Obtendo conexão com o banco de dados
+2025-09-07 10:11:07 [main] INFO  org.dti.infra.Database - Conexão com o banco de dados estabelecida com sucesso
+2025-09-07 10:11:07 [main] INFO  org.dti.Main - Executando script SQL para criação de tabelas
+2025-09-07 10:11:07 [main] INFO  org.dti.Main - Inicializando repositório, serviço e controller
+2025-09-07 10:11:07 [main] INFO  o.d.repository.SqliteBookRepository - SqliteBookRepository inicializado
+2025-09-07 10:11:07 [main] INFO  org.dti.validation.BookValidator - BookValidator inicializado
+2025-09-07 10:11:07 [main] INFO  org.dti.service.BookService - BookService inicializado
+2025-09-07 10:11:07 [main] INFO  o.dti.controller.ConsoleController - ConsoleController inicializado
+2025-09-07 10:11:07 [main] INFO  org.dti.Main - Iniciando interface de console
+2025-09-07 10:11:07 [main] INFO  o.dti.controller.ConsoleController - Iniciando aplicação ConsoleController
+2025-09-07 10:11:12 [main] INFO  o.dti.controller.ConsoleController - Comando recebido: 1
+2025-09-07 10:11:12 [main] INFO  o.dti.controller.ConsoleController - Executando listAll()
+2025-09-07 10:11:12 [main] INFO  org.dti.service.BookService - Listando todos os livros
+2025-09-07 10:11:12 [main] INFO  o.d.repository.SqliteBookRepository - Executando findAll()
+2025-09-07 10:11:12 [main] INFO  o.d.repository.SqliteBookRepository - findAll() retornou 1 registros
+2025-09-07 10:11:12 [main] INFO  org.dti.service.BookService - Total de livros encontrados: 1
+2025-09-07 10:11:12 [main] INFO  o.dti.controller.ConsoleController - Exibindo 1 registros
+2025-09-07 10:11:36 [main] INFO  o.dti.controller.ConsoleController - Comando recebido: 2
+2025-09-07 10:11:37 [main] INFO  o.dti.controller.ConsoleController - Executando getById() com entrada: 1
+2025-09-07 10:11:37 [main] INFO  org.dti.service.BookService - Buscando livro por ID: 1
+2025-09-07 10:11:37 [main] INFO  o.d.repository.SqliteBookRepository - Executando findById(1)
+2025-09-07 10:11:37 [main] INFO  o.d.repository.SqliteBookRepository - findById(1) encontrou: Book{id=1, title='teste', author='pedro', pages=150, price=-, publishedDate=-}
+2025-09-07 10:11:37 [main] INFO  org.dti.service.BookService - Livro encontrado: Book{id=1, title='teste', author='pedro', pages=150, price=-, publishedDate=-}
+2025-09-07 10:11:37 [main] INFO  o.dti.controller.ConsoleController - Livro encontrado: Book{id=1, title='teste', author='pedro', pages=150, price=-, publishedDate=-}
