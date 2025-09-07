@@ -26,3 +26,15 @@
 2025-09-07 10:11:37 [main] INFO  o.d.repository.SqliteBookRepository - findById(1) encontrou: Book{id=1, title='teste', author='pedro', pages=150, price=-, publishedDate=-}
 2025-09-07 10:11:37 [main] INFO  org.dti.service.BookService - Livro encontrado: Book{id=1, title='teste', author='pedro', pages=150, price=-, publishedDate=-}
 2025-09-07 10:11:37 [main] INFO  o.dti.controller.ConsoleController - Livro encontrado: Book{id=1, title='teste', author='pedro', pages=150, price=-, publishedDate=-}
+2025-09-07 10:19:54 [main] INFO  org.dti.validation.BookValidator - BookValidator inicializado
+2025-09-07 10:19:54 [main] INFO  org.dti.service.BookService - BookService inicializado
+2025-09-07 10:19:54 [main] INFO  org.dti.service.BookService - Tentativa de criar livro: Book{id=null, title='', author='', pages=0, price=-5.0, publishedDate=-}
+2025-09-07 10:19:54 [main] INFO  org.dti.validation.BookValidator - Validando livro para criação: Book{id=null, title='', author='', pages=0, price=-5.0, publishedDate=-}
+2025-09-07 10:19:54 [main] WARN  org.dti.validation.BookValidator - Validação para criação falhou com 4 erros: [title é obrigatório, author é obrigatório, pages deve ser maior que zero, price não pode ser negativo]
+2025-09-07 10:19:54 [main] WARN  org.dti.service.BookService - Falha na validação para criação do livro: [title é obrigatório, author é obrigatório, pages deve ser maior que zero, price não pode ser negativo]
+2025-09-07 10:19:54 [main] INFO  org.dti.validation.BookValidator - BookValidator inicializado
+2025-09-07 10:19:54 [main] INFO  org.dti.service.BookService - BookService inicializado
+2025-09-07 10:19:54 [main] INFO  org.dti.service.BookService - Tentativa de criar livro: Book{id=null, title='Title', author='Author', pages=100, price=19.9, publishedDate=2025-09-07}
+2025-09-07 10:19:54 [main] INFO  org.dti.validation.BookValidator - Validando livro para criação: Book{id=null, title='Title', author='Author', pages=100, price=19.9, publishedDate=2025-09-07}
+2025-09-07 10:19:54 [main] INFO  org.dti.validation.BookValidator - Validação para criação concluída sem erros
+2025-09-07 10:19:54 [main] INFO  org.dti.service.BookService - Livro criado com sucesso. ID: 1
